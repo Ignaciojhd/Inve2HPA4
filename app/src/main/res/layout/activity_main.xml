@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#2D142C">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Editar Perfil"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:id="@+id/lblTitulo"
+        android:textSize="32dp"
+        android:textColor="#510A32"
+        android:background="#EE4540"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/displayImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.23000002"
+        android:layout_below="@+id/lblTitulo"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/placeholderprofile"
+        />
+
+    <Button
+        android:id="@+id/cameraBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Camara"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.33"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/displayImageView"
+        android:layout_below="@+id/displayImageView"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#C72C41"/>
+
+    <Button
+        android:id="@+id/galleryBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Galeria"
+        app:layout_constraintBottom_toBottomOf="@+id/cameraBtn"
+        app:layout_constraintStart_toEndOf="@+id/cameraBtn"
+        app:layout_constraintTop_toTopOf="@+id/cameraBtn"
+        android:layout_below="@+id/displayImageView"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#C72C41"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre: Ignacio Hernandez"
+        android:textSize="24dp"
+        android:layout_below="@+id/cameraBtn"
+        android:layout_marginTop="25dp"
+        android:id="@+id/lblNombre"
+        android:textColor="#EE4540"
+        android:background="#510A32"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cedula: 8-957-849"
+        android:textSize="24dp"
+        android:layout_below="@+id/lblNombre"
+        android:layout_marginTop="10dp"
+        android:id="@+id/lblCedula"
+        android:textColor="#EE4540"
+        android:background="#510A32"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Grupo: 1IL-141"
+        android:textSize="24dp"
+        android:layout_below="@+id/lblCedula"
+        android:layout_marginTop="10dp"
+        android:id="@+id/lblGrupo"
+        android:textColor="#EE4540"
+        android:background="#510A32"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Materia: Herramientas Aplicadas a la Programación IV"
+        android:textSize="24dp"
+        android:layout_below="@+id/lblGrupo"
+        android:layout_marginTop="10dp"
+        android:id="@+id/lblMateria"
+        android:textColor="#EE4540"
+        android:background="#510A32"/>
+
+
+</RelativeLayout>
